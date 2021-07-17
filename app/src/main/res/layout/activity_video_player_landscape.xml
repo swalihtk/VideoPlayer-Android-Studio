@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        >
+        <SurfaceView
+            android:layout_gravity="center"
+            android:id="@+id/surface_view_player_one"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="20dp" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/linear_layout_tools"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/video_play_pause_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:onClick="doStartStop"
+            android:src="@drawable/video_pause"
+            android:tint="@color/white"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+</RelativeLayout>
